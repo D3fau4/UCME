@@ -1,0 +1,21 @@
+﻿<Window x:Class="Ulaunch_Custom_menu_entries.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ulaunch_Custom_menu_entries"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Namebox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="54.696,99.22,0,0"/>
+        <TextBox x:Name="AuthorBox" HorizontalAlignment="Left" Height="23" Margin="54.696,148.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="54.696,78.26,0,0"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="54.696,127.22,0,0" TextWrapping="Wrap" Text="Author:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Version:" VerticalAlignment="Top" Margin="54.696,176.18,0,0"/>
+        <TextBox x:Name="VersionBox" HorizontalAlignment="Left" Height="23" Margin="54.696,197.14,0,0" TextWrapping="Wrap" Text="1.0.0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="54.696,225.14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173.262"><Run Text="NRO path"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="NROpathBox" HorizontalAlignment="Left" Height="23" Margin="54.696,246.1,0,0" TextWrapping="Wrap" Text="/switch/" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="256" VerticalAlignment="Top" Width="256" Margin="491.19,56.66,0,0"/>
+
+    </Grid>
+</Window>
