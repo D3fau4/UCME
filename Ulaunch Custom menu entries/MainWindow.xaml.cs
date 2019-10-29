@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using System.Drawing;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -63,7 +64,7 @@ namespace Ulaunch_Custom_menu_entries
         }
         private void IconButton_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.MessageBox.Show("It is recommended that the image has a size of 256x256");
+            System.Windows.MessageBox.Show("use an image with the size of 256x256");
             OpenFileDialog icon = new OpenFileDialog()
             {
                 Title = "Select icon for entrie",
@@ -72,9 +73,15 @@ namespace Ulaunch_Custom_menu_entries
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
             };
             DialogResult res = icon.ShowDialog();
+            Bitmap img = new Bitmap(icon.FileName);
+            if (img.Width != 256 && img.Height != 256)
+            {
+                System.Windows.MessageBox.Show("please use a 256x256 image");
+                return;
+            }
             if (res is System.Windows.Forms.DialogResult.OK) iconfile = icon.FileName; else return;
             NROicon.Source = new BitmapImage(new Uri(icon.FileName));
-            //System.Windows.MessageBox.Show(iconfile);
+            
         }
 
         private void MakeButton_Click(object sender, RoutedEventArgs e)
