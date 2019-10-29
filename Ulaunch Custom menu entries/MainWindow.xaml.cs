@@ -25,7 +25,7 @@ namespace Ulaunch_Custom_menu_entries
     {
         const string outfolder = @"SDout";
         const string ulaunch = "\\ulaunch";
-        const string iconfolder = ulaunch + "\\icons\\";
+        const string iconfolder = ulaunch + "\\nro\\";
         const string jsonfolder = ulaunch + "\\entries\\";
         string iconfile = "";
 
@@ -109,7 +109,7 @@ namespace Ulaunch_Custom_menu_entries
             { type = TypeBox.Text,
                 nro_path = "sdmc:/" + NROpathBox.Text,
                 nro_argv = NROargvBox.Text,
-                icon = "sdmc:/ulaunch/icons/" + idname + ".png",
+                icon = "sdmc:/ulaunch/nro/" + idname + ".png",
                 name = Namebox.Text,
                 author = AuthorBox.Text,
                 version = VersionBox.Text
